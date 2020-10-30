@@ -4,8 +4,8 @@
   --borderColor: #c1c1c1;
   --primaryText: black;
   --secondaryText: #4b5156;
+  --previewShadow: #a7d9d9;
 }
-
 html,
 body,
 p {
@@ -41,7 +41,8 @@ a {
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
+  padding: 0;
 }
 
 h1 {
@@ -184,9 +185,7 @@ h6 {
 
 #preview-heading {
   padding: 0px;
-  margin: 0px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 20px 0 20px 0;
 }
 .corner {
   width: 7px;
@@ -214,6 +213,25 @@ h6 {
 #corner-bottom-right {
   bottom: -5px;
   right: -5px;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding-bottom: 50px;
+  padding-top: 50px;
+  gap: 150px;
+}
+
+.about-me-p {
+  padding-top: 15px;
+}
+
+#skills {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--previewShadow);
 }
 
 @media screen and (max-width: 1200px) {
