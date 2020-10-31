@@ -13,6 +13,10 @@ p {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -22,6 +26,11 @@ h6,
 strong {
   color: var(--primaryText);
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
 }
 
 p,
@@ -90,13 +99,15 @@ h6 {
   color: var(--primaryText);
 }
 
-.s1 {
+#s1,
+#s3 {
   background-color: var(--primaryColor);
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
 }
 
-.s2 {
+#s2,
+#s4 {
   background-color: var(--secondaryColor);
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
@@ -252,6 +263,7 @@ h6 {
 }
 
 #skills {
+  padding: 12px;
   margin-top: 15px;
   display: flex;
   justify-content: space-evenly;
@@ -280,9 +292,40 @@ h6 {
   object-fit: cover;
 }
 
+.post-title {
+  margin-top: 3px;
+}
+
+.post-intro {
+  margin-top: 10px;
+}
+
 .post-preview {
   background-color: #fff;
   padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tags-cnt {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 120px);
+  gap: 5px;
+}
+
+.project-tag {
+  background-color: var(--previewShadow);
+  color: var(--primaryText);
+  border-radius: 3px;
+  text-align: center;
+  padding: 5px;
+}
+
+.project-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #submit-btn {

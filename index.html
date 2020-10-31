@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <section class="s1">
+    <section id="s1">
       <div class="main-cnt">
         <div class="greeting-wrapper">
           <h1>Hi, I am Aleksandr Kataev</h1>
@@ -27,13 +27,13 @@
               <div id="dot-three" class="browser-dot"></div>
             </div>
             <ul class="navigation">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Personal Projects</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#s2">About</a></li>
+              <li><a href="#s3">Personal Projects</a></li>
+              <li><a href="#s4">Contact</a></li>
             </ul>
           </div>
           <div class="left-column">
-            <img id="profile-pic" src="./personal_image.png" />
+            <img id="profile-pic" src="media/profile.jpg" />
           </div>
           <div class="right-column">
             <div>
@@ -53,7 +53,7 @@
         </div>
       </div>
     </section>
-    <section class="s2">
+    <section id="s2">
       <div class="main-cnt">
         <div class="about-wrapper">
           <div class="about-me">
@@ -101,7 +101,7 @@
       </div>
     </section>
 
-    <section class="s1">
+    <section id="s3">
       <div class="main-cnt">
         <p class="heading">Personal Projects</p>
         <div class="post-wrapper">
@@ -109,14 +109,45 @@
             <div class="post">
               <div class="thumbnail">
                 <video autoplay muted loop width="100%" height="100%">
-                  <source src="amazone-clone.mp4" type="video/mp4" />
+                  <source
+                    src="media/amazone-clone.mp4"
+                    type="video/mp4"
+                  />
                 </video>
               </div>
               <div class="post-preview">
-                <h6>Amazone Clone</h6>
+                <h5 class="post-title">Amazone Clone</h5>
                 <p class="post-intro">
-                  Amazon clone built with bla bla bla
+                  Amazon clone built with React and Firebase. Fetches
+                  latest deals using Amazon Products API and accepts
+                  payments using Stripe.
                 </p>
+                <div class="tags-cnt">
+                  <p class="project-tag">React</p>
+                  <p class="project-tag">HTML/CSS</p>
+                  <p class="project-tag">Firebase</p>
+                  <p class="project-tag">Stripe</p>
+                  <p class="project-tag">Products API</p>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/aleksandr-kataev/Amazon-clone"
+                    target="_blank"
+                    ><img
+                      src="media/github.png"
+                      width="32px"
+                      height="32px"
+                  /></a>
+                  <hr />
+                  <a
+                    href="https://clone-332a8.web.app"
+                    target="_blank"
+                    ><img
+                      src="media/demo.png"
+                      width="53px"
+                      height="32px"
+                  /></a>
+                </div>
               </div>
             </div>
           </div>
@@ -124,15 +155,35 @@
             <div class="post">
               <div class="thumbnail">
                 <video autoplay muted loop width="100%" height="100%">
-                  <source src="ai-runner.mp4" type="video/webm" />
+                  <source
+                    src="media/ai-runner.mp4"
+                    type="video/webm"
+                  />
                 </video>
               </div>
 
               <div class="post-preview">
-                <h6>Runner Ai</h6>
+                <h5 class="post-title">AI player</h5>
                 <p class="post-intro">
-                  Runner ai made to play a simple game made in pygame
+                  A neural network trained to play a simple game made
+                  using pygame. Uses python's NEAT module to train the
+                  network.
                 </p>
+                <div class="tags-cnt">
+                  <p class="project-tag">Python</p>
+                  <p class="project-tag">Pygame</p>
+                  <p class="project-tag">NEAT</p>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/aleksandr-kataev/Dodger_ai"
+                    target="_blank"
+                    ><img
+                      src="media/github.png"
+                      width="32px"
+                      height="32px"
+                  /></a>
+                </div>
               </div>
             </div>
           </div>
@@ -140,13 +191,32 @@
             <div class="post">
               <div class="thumbnail">
                 <video autoplay muted loop width="100%" height="100%">
-                  <source src="todoist.mp4" type="video/webm" />
+                  <source src="media/a-star.mp4" type="video/webm" />
                 </video>
               </div>
 
               <div class="post-preview">
-                <h6>Todoist clone</h6>
-                <p class="post-intro">Todoist clone bla bla bla</p>
+                <h5 class="post-title">
+                  A-star pathfinding visualiser
+                </h5>
+                <p class="post-intro">
+                  A-star pathfinding algorithm visualiser made in
+                  Java.
+                </p>
+                <div class="tags-cnt">
+                  <p class="project-tag">Java</p>
+                  <p class="project-tag">JFrame</p>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/aleksandr-kataev/A-Star-Algorithm-Visualisation"
+                    target="_blank"
+                    ><img
+                      src="media/github.png"
+                      width="32px"
+                      height="32px"
+                  /></a>
+                </div>
               </div>
             </div>
           </div>
@@ -154,22 +224,46 @@
             <div class="post">
               <div class="thumbnail">
                 <video autoplay muted loop width="100%" height="100%">
-                  <source src="a-star.mp4" type="video/webm" />
+                  <source src="media/todoist.mp4" type="video/webm" />
                 </video>
               </div>
 
               <div class="post-preview">
-                <h6>A-star pathfinding visualiser</h6>
+                <h5 class="post-title">Todoist clone</h5>
                 <p class="post-intro">
-                  A-star pathfinding visualiser made in Java
+                  Todoist clone made with React and Firebase.
                 </p>
+                <div class="tags-cnt">
+                  <p class="project-tag">React</p>
+                  <p class="project-tag">HTML/SCSS</p>
+                  <p class="project-tag">Firebase</p>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/aleksandr-kataev/TodoIst"
+                    target="_blank"
+                    ><img
+                      src="media/github.png"
+                      width="32px"
+                      height="32px"
+                  /></a>
+                  <hr />
+                  <a
+                    href="https://todo-90cc6.web.app/"
+                    target="_blank"
+                    ><img
+                      src="media/demo.png"
+                      width="53px"
+                      height="32px"
+                  /></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="s2">
+    <section id="s4">
       <div class="main-cnt">
         <p class="heading">Get in touch</p>
         <div class="form-wrapper">
