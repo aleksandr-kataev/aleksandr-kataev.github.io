@@ -99,15 +99,15 @@ h6 {
   color: var(--primaryText);
 }
 
-#s1,
-#s3 {
+#main,
+#personal-projects {
   background-color: var(--primaryColor);
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
 }
 
-#s2,
-#s4 {
+#about,
+#contact {
   background-color: var(--secondaryColor);
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;

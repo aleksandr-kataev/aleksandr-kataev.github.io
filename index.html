@@ -1,335 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Aleksandr Kataev</title>
-    <link rel="icon" type="image/png" href="media/portfolio.png" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <section id="s1">
-      <div class="main-cnt">
-        <div class="greeting-wrapper">
-          <h1>Hi, I am Aleksandr Kataev</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aleksandr Kataev</title>
+  <link rel="icon" type="image/png" href="media/portfolio.png" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <section id="main">
+    <div class="main-cnt">
+      <div class="greeting-wrapper">
+        <h1>Hi, I am Aleksandr Kataev</h1>
+      </div>
+      <div class="intro-wrapper">
+        <div class="nav-wrapper">
+          <div class="dots-wrapper">
+            <div id="dot-one" class="browser-dot"></div>
+            <div id="dot-two" class="browser-dot"></div>
+            <div id="dot-three" class="browser-dot"></div>
+          </div>
+          <ul class="navigation">
+            <li><a href="#about">About</a></li>
+            <li><a href="#personal-projects">Personal Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="intro-wrapper">
-          <div class="nav-wrapper">
-            <div class="dots-wrapper">
-              <div id="dot-one" class="browser-dot"></div>
-              <div id="dot-two" class="browser-dot"></div>
-              <div id="dot-three" class="browser-dot"></div>
+        <div class="left-column">
+          <img id="profile-pic" src="media/profile.jpg" />
+        </div>
+        <div class="right-column">
+          <div>
+            <div id="preview">
+              <div id="corner-top-left" class="corner"></div>
+              <div id="corner-top-right" class="corner"></div>
+              <h3 id="preview-heading">Who Am I</h3>
+              <p style="margin-bottom: 10px">
+                Final year computer science student at the
+                University of Essex
+              </p>
+              <div id="corner-bottom-left" class="corner"></div>
+              <div id="corner-bottom-right" class="corner"></div>
             </div>
-            <ul class="navigation">
-              <li><a href="#s2">About</a></li>
-              <li><a href="#s3">Personal Projects</a></li>
-              <li><a href="#s4">Contact</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="main-cnt">
+      <div class="about-wrapper">
+        <div class="about-me">
+          <h4>More about me</h4>
+          <p class="about-me-p">
+            Final year computer science student looking to explore
+            different aspects of technology.
+          </p>
+          <p class="about-me-p">
+            Have passion in artificial intelligence and web
+            development but keen to explore other areas and discover
+            my future career path.
+          </p>
+          <a style="display: inline-block" class="about-me-p" target="_blank" href="media/CV_AK.pdf">Download CV</a>
+        </div>
+
+        <div class="social-links">
+          <h4>Skills</h4>
+          <div id="skills">
+            <ul>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node/Express</li>
+              <li>Python</li>
+              <li>TensorFlow</li>
+              <li>Java</li>
+            </ul>
+            <ul>
+              <li>Git/GitHub</li>
+              <li>Firebase</li>
+              <li>Heroku</li>
+              <li>REST API</li>
+              <li>HTML/CSS</li>
+              <li>Adobe XD</li>
             </ul>
           </div>
-          <div class="left-column">
-            <img id="profile-pic" src="media/profile.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="personal-projects">
+    <div class="main-cnt">
+      <p class="heading">Personal Projects</p>
+      <div class="post-wrapper">
+        <div>
+          <div class="post">
+            <div class="thumbnail">
+              <video autoplay muted loop width="100%" height="100%">
+                <source src="" type="video/mp4" />
+              </video>
+            </div>
+            <div class="post-preview">
+              <h5 class="post-title">Pong with hand detection</h5>
+              <p class="post-intro">
+                Pong game built with hand detection controlls using PoseNet model
+              </p>
+              <div class="tags-cnt">
+                <p class="project-tag">PoseNet</p>
+                <p class="project-tag">p5.js</p>
+                <p class="project-tag">ml5.js</p>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/aleksandr-kataev/Pong_hand_detection" target="_blank"><img
+                    src="media/github.png" width="32px" height="32px" /></a>
+                <hr />
+                <a href="https://clever-mclean-95de4b.netlify.app" target="_blank"><img src="media/demo.png"
+                    width="53px" height="32px" /></a>
+              </div>
+            </div>
           </div>
-          <div class="right-column">
-            <div>
-              <div id="preview">
-                <div id="corner-top-left" class="corner"></div>
-                <div id="corner-top-right" class="corner"></div>
-                <h3 id="preview-heading">Who Am I</h3>
-                <p style="margin-bottom: 10px">
-                  Final year computer science student at the
-                  University of Essex
-                </p>
-                <div id="corner-bottom-left" class="corner"></div>
-                <div id="corner-bottom-right" class="corner"></div>
+        </div>
+        <div>
+          <div class="post">
+            <div class="thumbnail">
+              <video autoplay muted loop width="100%" height="100%">
+                <source src="media/amazone-clone.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="post-preview">
+              <h5 class="post-title">Amazone Clone</h5>
+              <p class="post-intro">
+                Amazon clone built with React and Firebase. Fetches
+                latest deals using Amazon Products API and accepts
+                payments using Stripe.
+              </p>
+              <div class="tags-cnt">
+                <p class="project-tag">React</p>
+                <p class="project-tag">HTML/CSS</p>
+                <p class="project-tag">Firebase</p>
+                <p class="project-tag">Stripe</p>
+                <p class="project-tag">Products API</p>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/aleksandr-kataev/Amazon-clone" target="_blank"><img src="media/github.png"
+                    width="32px" height="32px" /></a>
+                <hr />
+                <a href="https://clone-332a8.web.app" target="_blank"><img src="media/demo.png" width="53px"
+                    height="32px" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="post">
+            <div class="thumbnail">
+              <video autoplay muted loop width="100%" height="100%">
+                <source src="media/ai-runner.mp4" type="video/webm" />
+              </video>
+            </div>
+
+            <div class="post-preview">
+              <h5 class="post-title">AI player</h5>
+              <p class="post-intro">
+                A neural network trained to play a simple game made
+                using pygame. Uses python's NEAT module to train the
+                network.
+              </p>
+              <div class="tags-cnt">
+                <p class="project-tag">Python</p>
+                <p class="project-tag">Pygame</p>
+                <p class="project-tag">NEAT</p>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/aleksandr-kataev/Dodger_ai" target="_blank"><img src="media/github.png"
+                    width="32px" height="32px" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="post">
+            <div class="thumbnail">
+              <video autoplay muted loop width="100%" height="100%">
+                <source src="media/a-star.mp4" type="video/webm" />
+              </video>
+            </div>
+
+            <div class="post-preview">
+              <h5 class="post-title">
+                A-star pathfinding visualiser
+              </h5>
+              <p class="post-intro">
+                A-star pathfinding algorithm visualiser made in
+                Java.
+              </p>
+              <div class="tags-cnt">
+                <p class="project-tag">Java</p>
+                <p class="project-tag">Swing</p>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/aleksandr-kataev/A-Star-Algorithm-Visualisation" target="_blank"><img
+                    src="media/github.png" width="32px" height="32px" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="post">
+            <div class="thumbnail">
+              <video autoplay muted loop width="100%" height="100%">
+                <source src="media/todoist.mp4" type="video/webm" />
+              </video>
+            </div>
+
+            <div class="post-preview">
+              <h5 class="post-title">Todoist clone</h5>
+              <p class="post-intro">
+                Todoist clone made with React and Firebase.
+              </p>
+              <div class="tags-cnt">
+                <p class="project-tag">React</p>
+                <p class="project-tag">HTML/SASS</p>
+                <p class="project-tag">Firebase</p>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/aleksandr-kataev/TodoIst" target="_blank"><img src="media/github.png"
+                    width="32px" height="32px" /></a>
+                <hr />
+                <a href="https://todo-90cc6.web.app/" target="_blank"><img src="media/demo.png" width="53px"
+                    height="32px" /></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="s2">
-      <div class="main-cnt">
-        <div class="about-wrapper">
-          <div class="about-me">
-            <h4>More about me</h4>
-            <p class="about-me-p">
-              Final year computer science student looking to explore
-              different aspects of technology.
-            </p>
-            <p class="about-me-p">
-              Have passion in artificial intelligence and web
-              development but keen to explore other areas and discover
-              my future career path.
-            </p>
-            <a
-              style="display: inline-block"
-              class="about-me-p"
-              target="_blank"
-              href="media/CV_AK.pdf"
-              >Download CV</a
-            >
-          </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="main-cnt">
+      <p class="heading">Get in touch</p>
+      <div class="form-wrapper">
+        <form id="contact-form" action="https://formspree.io/f/mqkgbpql" method="POST">
+          <label>Name</label>
+          <input class="input-field" type="text" name="name" />
 
-          <div class="social-links">
-            <h4>Skills</h4>
-            <div id="skills">
-              <ul>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node/Express</li>
-                <li>Python</li>
-                <li>TensorFlow</li>
-                <li>Java</li>
-              </ul>
-              <ul>
-                <li>Git/GitHub</li>
-                <li>Firebase</li>
-                <li>Heroku</li>
-                <li>REST API</li>
-                <li>HTML/CSS</li>
-                <li>Adobe XD</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          <label>Subject</label>
+          <input class="input-field" type="text" name="subject" />
+
+          <label>Email</label>
+          <input class="input-field" type="text" name="email" />
+
+          <label>Message</label>
+          <textarea class="input-field" name="message"></textarea>
+
+          <input id="submit-btn" type="submit" value="Send" />
+        </form>
       </div>
-    </section>
-    <section id="s3">
-      <div class="main-cnt">
-        <p class="heading">Personal Projects</p>
-        <div class="post-wrapper">
-          <div>
-            <div class="post">
-              <div class="thumbnail">
-                <video autoplay muted loop width="100%" height="100%">
-                  <source
-                    src=""
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-              <div class="post-preview">
-                <h5 class="post-title">Pong with hand detection</h5>
-                <p class="post-intro">
-                  Pong game built with hand detection controlls using PoseNet model
-                </p>
-                <div class="tags-cnt">
-                  <p class="project-tag">PoseNet</p>
-                  <p class="project-tag">p5.js</p>
-                  <p class="project-tag">ml5.js</p>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/aleksandr-kataev/Pong_hand_detection"
-                    target="_blank"
-                    ><img
-                      src="media/github.png"
-                      width="32px"
-                      height="32px"
-                  /></a>
-                  <hr />
-                  <a
-                    href="https://clever-mclean-95de4b.netlify.app"
-                    target="_blank"
-                    ><img
-                      src="media/demo.png"
-                      width="53px"
-                      height="32px"
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="post">
-              <div class="thumbnail">
-                <video autoplay muted loop width="100%" height="100%">
-                  <source
-                    src="media/amazone-clone.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-              <div class="post-preview">
-                <h5 class="post-title">Amazone Clone</h5>
-                <p class="post-intro">
-                  Amazon clone built with React and Firebase. Fetches
-                  latest deals using Amazon Products API and accepts
-                  payments using Stripe.
-                </p>
-                <div class="tags-cnt">
-                  <p class="project-tag">React</p>
-                  <p class="project-tag">HTML/CSS</p>
-                  <p class="project-tag">Firebase</p>
-                  <p class="project-tag">Stripe</p>
-                  <p class="project-tag">Products API</p>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/aleksandr-kataev/Amazon-clone"
-                    target="_blank"
-                    ><img
-                      src="media/github.png"
-                      width="32px"
-                      height="32px"
-                  /></a>
-                  <hr />
-                  <a
-                    href="https://clone-332a8.web.app"
-                    target="_blank"
-                    ><img
-                      src="media/demo.png"
-                      width="53px"
-                      height="32px"
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="post">
-              <div class="thumbnail">
-                <video autoplay muted loop width="100%" height="100%">
-                  <source
-                    src="media/ai-runner.mp4"
-                    type="video/webm"
-                  />
-                </video>
-              </div>
+    </div>
+  </section>
+</body>
 
-              <div class="post-preview">
-                <h5 class="post-title">AI player</h5>
-                <p class="post-intro">
-                  A neural network trained to play a simple game made
-                  using pygame. Uses python's NEAT module to train the
-                  network.
-                </p>
-                <div class="tags-cnt">
-                  <p class="project-tag">Python</p>
-                  <p class="project-tag">Pygame</p>
-                  <p class="project-tag">NEAT</p>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/aleksandr-kataev/Dodger_ai"
-                    target="_blank"
-                    ><img
-                      src="media/github.png"
-                      width="32px"
-                      height="32px"
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="post">
-              <div class="thumbnail">
-                <video autoplay muted loop width="100%" height="100%">
-                  <source src="media/a-star.mp4" type="video/webm" />
-                </video>
-              </div>
-
-              <div class="post-preview">
-                <h5 class="post-title">
-                  A-star pathfinding visualiser
-                </h5>
-                <p class="post-intro">
-                  A-star pathfinding algorithm visualiser made in
-                  Java.
-                </p>
-                <div class="tags-cnt">
-                  <p class="project-tag">Java</p>
-                  <p class="project-tag">Swing</p>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/aleksandr-kataev/A-Star-Algorithm-Visualisation"
-                    target="_blank"
-                    ><img
-                      src="media/github.png"
-                      width="32px"
-                      height="32px"
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="post">
-              <div class="thumbnail">
-                <video autoplay muted loop width="100%" height="100%">
-                  <source src="media/todoist.mp4" type="video/webm" />
-                </video>
-              </div>
-
-              <div class="post-preview">
-                <h5 class="post-title">Todoist clone</h5>
-                <p class="post-intro">
-                  Todoist clone made with React and Firebase.
-                </p>
-                <div class="tags-cnt">
-                  <p class="project-tag">React</p>
-                  <p class="project-tag">HTML/SASS</p>
-                  <p class="project-tag">Firebase</p>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/aleksandr-kataev/TodoIst"
-                    target="_blank"
-                    ><img
-                      src="media/github.png"
-                      width="32px"
-                      height="32px"
-                  /></a>
-                  <hr />
-                  <a
-                    href="https://todo-90cc6.web.app/"
-                    target="_blank"
-                    ><img
-                      src="media/demo.png"
-                      width="53px"
-                      height="32px"
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="s4">
-      <div class="main-cnt">
-        <p class="heading">Get in touch</p>
-        <div class="form-wrapper">
-          <form
-            id="contact-form"
-            action="https://formspree.io/f/mqkgbpql"
-            method="POST"
-          >
-            <label>Name</label>
-            <input class="input-field" type="text" name="name" />
-
-            <label>Subject</label>
-            <input class="input-field" type="text" name="subject" />
-
-            <label>Email</label>
-            <input class="input-field" type="text" name="email" />
-
-            <label>Message</label>
-            <textarea class="input-field" name="message"></textarea>
-
-            <input id="submit-btn" type="submit" value="Send" />
-          </form>
-        </div>
-      </div>
-    </section>
-  </body>
 </html>
