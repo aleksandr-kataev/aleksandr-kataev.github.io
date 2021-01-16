@@ -401,4 +401,8 @@ h6 {
   .post-wrapper {
     grid-template-columns: repeat(auto-fit, 300px);
   }
+  .thumbnail {
+    height: 100%;
+  }
 }
+
