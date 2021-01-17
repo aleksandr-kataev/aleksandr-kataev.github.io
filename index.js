@@ -4,25 +4,51 @@ window.mobileCheck = function () {
     return check;
 }
 
+const thumbnailArray = [
+    document.getElementById('pose_detection_thumbnail'),
+    document.getElementById('amazon_clone_thumbnail'),
+    document.getElementById('ai_runner_thumbnail'),
+    document.getElementById('a_star_thumbnail'),
+    document.getElementById('todoist_thumbnail'),
+]
+
 if (window.mobileCheck()) {
-    const posterArray = [
-        '/media/pose_detection_poster.png',
-        '/media/amazon_clone_poster.png',
-        '/media/ai_runner_poster.png',
-        '/media/a_star_poster.png',
-        '/media/todoist_poster.png'
+    const imageArray = [
+        'media/pong.png',
+        'media/amazon_clone.png',
+        'media/ai_runner.png',
+        'media/a_star.png',
+        'media/todoist.png',
     ]
-
-    const thumbnailArray = [
-        document.getElementById('pose_detection_video'),
-        document.getElementById('amazon_clone_video'),
-        document.getElementById('ai_runner_video'),
-        document.getElementById('a_star_video'),
-        document.getElementById('todoist_video')
-    ]
-
     thumbnailArray.forEach((thumbnail, i) => {
-        thumbnail.setAttribute('poster', posterArray[i])
-        thumbnail.removeAttribute('autoplay')
+        const newImageElement = document.createElement('img');
+        newImageElement.setAttribute('src', imageArray[i])
+        thumbnail.appendChild(newImageElement);
+        newImageElement.setAttribute('width', '100%');
+        newImageElement.setAttribute('height', '100%');
+    })
+} else {
+    const videoArray = [
+        'media/pong.webm',
+        'media/amazon_clone.webm',
+        'media/ai_runner.webm',
+        'media/a_star.webm',
+        'media/todoist.webm',
+    ]
+    thumbnailArray.forEach((thumbnail, i) => {
+        const newVideoElement = document.createElement('video');
+        newVideoElement.setAttribute('width', '100%');
+        newVideoElement.setAttribute('height', '100%');
+        newVideoElement.autoplay = true;
+        newVideoElement.loop = true;
+        newVideoElement.muted = true;
+        newVideoElement.load();
+
+        const ogvSource = document.createElement('source');
+        ogvSource.setAttribute('src', videoArray[i]);
+        ogvSource.setAttribute('type', 'video/webm');
+        newVideoElement.appendChild(ogvSource);
+
+        thumbnail.appendChild(newVideoElement);
     })
 }
