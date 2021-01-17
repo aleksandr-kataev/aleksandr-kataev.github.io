@@ -404,5 +404,10 @@ h6 {
   .thumbnail {
     height: 100%;
   }
+  #about,
+  #contact{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
